@@ -7,7 +7,7 @@ A simple Django decorator to restrict view access to staff users.
 Install the package using pip:
 
 ```bash
-pip install django-staff-required
+pip install easy-staff-required
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ After installing the package, you can use the `@staff_required` decorator in you
 
 ```python
 from django.shortcuts import render
-from django_staff_required import staff_required
+from easy_staff_required import staff_required
 
 @staff_required
 def my_view(request):
@@ -29,7 +29,7 @@ You can also use the @staff_required decorator in combination with Django's buil
 
 ```python
 from django.contrib.auth.decorators import login_required
-from django_staff_required import staff_required
+from easy_staff_required import staff_required
 
 @login_required
 @staff_required
